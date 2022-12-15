@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rParant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <TextView
+            android:id="@+id/notificationTitle"
+            style="@style/TextAppearance.Compat.Notification.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sdp"
+            android:layout_toStartOf="@+id/notificationImage"
+            android:layout_toLeftOf="@id/notificationImage"
+            android:maxLines="1"
+            android:text="Remote Title" />
+
+        <TextView
+            android:id="@+id/notificationText"
+            style="@style/TextAppearance.Compat.Notification.Line2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notificationTitle"
+            android:layout_alignStart="@+id/notificationTitle"
+            android:layout_alignLeft="@+id/notificationTitle"
+            android:layout_alignEnd="@+id/notificationTitle"
+            android:layout_alignRight="@+id/notificationTitle"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_10sdp"
+            android:maxLines="2"
+            android:text="Remote message" />
+
+        <ImageView
+            android:id="@+id/notificationImage"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="top|end"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

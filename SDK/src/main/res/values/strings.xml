@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Resulticks</string>
+
+    <!--Shared Preference Keys-->
+    <!--<string name="resulticksSharedUserId">sharedUserId</string>
+    <string name="resulticksSharedDatabaseDeviceId">sharedDatabaseDeviceId</string>
+    <string name="resulticksSharedReferral">QueryParameter</string>
+    <string name="resulticksSharedAPIKey">sharedAPIKey</string>
+    <string name="resulticksSharedMobileFriendlyUrl">mobileFriendlyUrl</string>
+    <string name="resulticksSharedAdverId">advertId</string>
+    <string name="rNewInstalled">App Installed</string>
+    <string name="rfirstopen">App First Open</string>
+
+
+    &lt;!&ndash;Notifications Types &ndash;&gt;
+
+    <string name="resulticksSharedCampaignId">sharedCampaignId</string>
+
+    &lt;!&ndash;SDK API KEY &ndash;&gt;
+
+    <string name="resulticksManifestApiKey">resulticks.key</string>
+    <string name="resulticksManifestNotificationIcon">resulticks.default_notification_icon</string>
+    <string name="resulticksManifestNotificationColor">resulticks.default_notification_color</string>
+    <string name="resulticksManifestNotificationIconTrans">resulticks.default_notification_icon_transparent</string>
+
+    &lt;!&ndash;APP Notification ID  &ndash;&gt;
+
+    <string name="resulticksAppNotificationId">notificationId</string>
+
+    &lt;!&ndash;SDK Deep Link KEY &ndash;&gt;
+
+    <string name="resulticksDeepLinkParamIsNewInstall">isNewInstall</string>
+    <string name="resulticksDeepLinkParamIsViaDeepLinkingLauncher">isViaDeepLinkingLauncher</string>
+    <string name="resulticksNotificationViaLauncher">isViaNotificationLauncher</string>
+    <string name="resulticksDeepLinkParamReferralId">_resulticks_link_unique_Id</string>
+
+
+    &lt;!&ndash;SDK API Parameter KEY &ndash;&gt;
+
+    <string name="resulticksApiParamId">id</string>
+    <string name="resulticksApiParamCategory">category</string>
+    <string name="resulticksApiParamsDeviceId">deviceId</string>
+    <string name="resulticksApiParamNavigationScreen">navigationScreen</string>
+    <string name="resulticksApiParamTitle">title</string>
+    <string name="resulticksApiParamBody">body</string>
+    <string name="resulticksApiParamUrl">url</string>
+    <string name="resulticksApiParamIsNewUser">isNewUser</string>
+    <string name="resulticksApiParamStatus">status</string>
+    <string name="resulticksApiParamRating">rating</string>
+    <string name="resulticksApiParamComments">comments</string>
+    <string name="resulticksApiParamStartTime">startTime</string>
+    <string name="resulticksApiParamEndTime">endTime</string>
+    <string name="resulticksApiParamSubScreenName">subScreenName</string>
+    <string name="resulticksApiParamErrorLog">errorLog</string>
+    <string name="resulticksApiParamScreenName">screenName</string>
+    <string name="resulticksApiParamCrashText">crashText</string>
+    <string name="resulticksApiParamTimeStamp">timeStamp</string>
+    <string name="resulticksApiParamAppCrash">appCrash</string>
+    <string name="resulticksApiParamEventName">eventName</string>
+    <string name="resulticksApiParamData">data</string>-->
+    <string name="hint_submit">submit</string>
+    <string name="hint_let_us_know_about_n_your_purchase">Let us know about your purchase</string>
+    <string name="we_are_always_trying_to_improve_n_what_we_do_and_your_feedback_is_invaluable">We are always trying to improve  what we do and your feedback is invaluable!</string>
+    <string name="fcmToken">token</string>
+
+    <!-- TODO: remove this placeholder text -->
+
+
+</resources>

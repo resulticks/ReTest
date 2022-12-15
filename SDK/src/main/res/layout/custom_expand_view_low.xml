@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rParant"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <include
+        android:id="@+id/push_collapsed"
+        layout="@layout/custom_collapse_view_low"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:id="@+id/rparant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/push_collapsed">
+
+        <ImageView
+            android:id="@+id/big_picture_imageview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_145sdp"
+            android:visibility="gone"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/no_media"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            android:text="Content Not Supportable" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow" />
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            android:rotation="180"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_arrow" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/push_actions"
+        layout="@layout/custom_actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rparant"
+        android:layout_gravity="bottom" />
+
+
+</RelativeLayout>

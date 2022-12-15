@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentEnd="true"
+    android:layout_margin="16dp"
+    android:background="#99000000"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="10dp"
+        android:layout_margin="16dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/contentLay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@color/cardview_light_background"
+                    android:layout_above="@+id/rParant"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:maxLines="1"
+                        android:text="Welcome to all"
+                        android:padding="3dp"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/descriptions"
+                        android:layout_width="wrap_content"
+                        android:text="Welcome to all"
+                        android:textSize="12sp"
+                        android:padding="3dp"
+                        android:maxLines="2"
+                        android:ellipsize="end"
+                        android:textColor="@android:color/black"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rParant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/actions"
+                    android:background="@android:color/transparent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="WebViewLayout">
+
+                        <WebView
+                            android:id="@+id/web_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:background="@android:color/transparent"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/img_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:scaleType="centerCrop"
+                            android:src="@mipmap/ic_launcher" />
+
+
+                        <com.google.android.exoplayer2.ui.PlayerView
+                            android:id="@+id/video_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:visibility="gone"
+                            app:resize_mode="fill" />
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/actions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/option1"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black"
+                        android:text="Maybe Later" />
+
+                    <TextView
+                        android:id="@+id/option2"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:background="@android:color/white"
+                        android:textColor="@android:color/black"
+                        android:text="Dismiss" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iv_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_cancel_black_24dp"
+                android:padding="5dp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
