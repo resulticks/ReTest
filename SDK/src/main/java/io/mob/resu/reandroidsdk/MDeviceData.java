@@ -3,6 +3,7 @@ package io.mob.resu.reandroidsdk;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.os.Build;
+import android.text.TextUtils;
 
 import java.util.ArrayList;
 
@@ -38,6 +39,10 @@ public class MDeviceData {
         try {
 
             appId = SharedPref.getInstance().getStringValue(context, AppConstants.reSharedAPIKey);
+            if(TextUtils.isEmpty(appId))
+            {
+                Util.getAppKey(context);
+            }
             deviceId = Util.getDeviceId(context);
             deviceIdfa = SharedPref.getInstance().getStringValue(context, AppConstants.reSharedAdverId);
             deviceOsVersion = "" + Build.VERSION.RELEASE;

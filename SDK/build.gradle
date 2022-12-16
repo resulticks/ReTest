@@ -46,6 +46,12 @@ dependencies {
     implementation "com.android.installreferrer:installreferrer:2.2"
 
     //implementation "com.facebook.react:react-native:+"
+    implementation 'com.google.code.gson:gson:2.8.6'
+    compileOnly files('src/main/libs/arm64_v8a_debug-1.0.0-b8752bbfff0419c8bf616b602bc59fd28f6a3d1b.jar')
+    compileOnly files('src/main/libs/flutter_embedding_debug-1.0.0-b8752bbfff0419c8bf616b602bc59fd28f6a3d1b.jar')
+    compileOnly files('src/main/libs/x86_64_debug-1.0.0-b8752bbfff0419c8bf616b602bc59fd28f6a3d1b.jar')
+    compileOnly files('src/main/libs/armeabi_v7a_debug-1.0.0-b8752bbfff0419c8bf616b602bc59fd28f6a3d1b.jar')
+    compileOnly files('src/main/libs/x86_debug-1.0.0-b8752bbfff0419c8bf616b602bc59fd28f6a3d1b.jar')
 
 }
 repositories {

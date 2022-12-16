@@ -6,6 +6,10 @@ import android.os.IBinder;
 
 import io.mob.resu.reandroidsdk.error.Log;
 
+import static io.mob.resu.reandroidsdk.AppConstants.appOpenTime;
+import static io.mob.resu.reandroidsdk.AppConstants.sessionId;
+
+
 
 public class AppKillService extends Service {
 

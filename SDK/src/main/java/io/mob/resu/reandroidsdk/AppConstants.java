@@ -108,7 +108,7 @@ public class AppConstants {
     public static String CURRENT_ACTIVITY_NAME = "";
     public static String CURRENT_FRAGMENT_NAME = "";
 
-    static final String SDK_VERSION = "3.0.2";
+    static final String SDK_VERSION = "3.0.6";
     static final String NOTIFICATION_EXPIRED = "1";
     static final String NOTIFICATION_OPEN = "2";
     static final String NOTIFICATION_DISMISSED = "3";
@@ -129,7 +129,7 @@ public class AppConstants {
     static JSONObject lastDeviceData = null;
 
 
-    static final String socketLiveDashboard = "https://soc.resu.io";
+    static final String socketLiveDashboard = "https://mobisoc.rsut.io";
     static final String socketUrl = "https://mobsoc.resu.io/";
 
     static final String CarosualUrl = "getMobileCarousel?id";
@@ -137,18 +137,18 @@ public class AppConstants {
     static final String FORM_API = "submitLeadForm";
     static final String CAMPAIGN_BLAST_API = "MobileSDKBlast";
 
-
     // Team Environment
   /* 2022
    public static final String baseUrl = "https://teamsdk.resulticks.net/Home/";
    public static final String FirstBaseUrl = "https://teamsdk.resulticks.net/Home/";*/
-
     // Run23 Environment
+    /*
     static final String baseUrl = "https://mobis.resu.io/Home/";
     static final String FirstBaseUrl = "https://mobis.resu.io/Home/";
-    /*static final String baseUrl = "https://mad.rsut.io/Home/";
+    */
+    static final String baseUrl = "https://mad.rsut.io/Home/";
     static final String FirstBaseUrl = "https://mad.rsut.io/Home/";
-*/
+
     public static boolean LogFlag = false;
     static int retryCount = 1;
     static String deviceId = "";

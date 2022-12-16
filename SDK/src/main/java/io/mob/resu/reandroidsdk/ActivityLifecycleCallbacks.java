@@ -1004,6 +1004,7 @@ class ActivityLifecycleCallbacks implements Application.ActivityLifecycleCallbac
      */
     private String isTablet(Context context) {
         try {
+
             boolean xlarge = ((context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) == 4);
             boolean large = ((context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) == Configuration.SCREENLAYOUT_SIZE_LARGE);
             if (xlarge || large)

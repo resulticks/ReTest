@@ -1426,9 +1426,7 @@ class DataBase {
                     cursor.close();
                 }
                 closeRead("InsertOrUpdateTask");
-                if (jsonObject != null) {
-                    insertOrUpdateNData(jsonObject.toString(), campaignId, flag, Table.NOTIFICATION_TABLE);
-                }
+                insertOrUpdateNData(jsonObject.toString(), campaignId, flag, Table.NOTIFICATION_TABLE);
                 return campaignId;
             } catch (Exception e) {
                 if (cursor != null && !cursor.isClosed()) {
